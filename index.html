@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" sizes="32x32" href="assets/image/Logo.svg">
+    <title>MarryGold Films - Wedding Photography</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- Header Start -->
+    <header id="header">
+        <div class="container d-flex justify-content-between align-items-center py-3">
+            <div class="d-flex align-items-center" data-aos="fade-right">
+                <a href="../index.html" class="logo-link">
+                    <img src="assets/image/Logo.svg" alt="logo" class="header-logo">
+                </a>
+                <span class="ms-2 text-logo">MarryGold Films</span>
+            </div>
+
+            <nav class="d-none d-lg-block custom-nav" data-aos="fade-down">
+                <ul class="nav custom-nav-list">
+                    <li class="nav-item custom-nav-item">
+                        <a class="nav-link custom-nav-link active" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item custom-nav-item">
+                        <a class="nav-link custom-nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item-products">
+                        <a class="nav-link-products custom-nav-link" href="#">Services <svg
+                                xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-chevron-down">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg></a>
+                        <div class="dropdown-content">
+                            <a href="services.html">Services</a>
+                        </div>
+                    </li>
+                    <li class="nav-item custom-nav-item">
+                        <a class="nav-link custom-nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item custom-nav-item">
+                        <a class="nav-link custom-nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </nav>
+            <a href="contact.html">
+                <button class="btn btn-primary btn-marrygold d-none d-lg-block" data-aos="zoom-in">Leave a
+                    Request</button>
+            </a>
+
+            <button class="btn d-lg-none" id="mobileMenuButton">
+                <img src="assets/image/burger.svg" alt="burger">
+            </button>
+        </div>
+
+        <div id="sideMenu" class="side-menu" style="z-index: 1001;">
+            <a href="javascript:void(0);" class="close-btn" id="closeSideMenu">&times;</a>
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About Us</a>
+                </li>
+                <li class="nav-item-products">
+                    <a class="nav-link-products custom-nav-link" href="#">
+                        Services
+                        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-chevron-down">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </a>
+                    <div class="dropdown-content">
+                        <a href="services.html">Services</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="gallery.html">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+                <a href="contact.html">
+                    <button class="btn btn-primary btn-marrygold d-none d-lg-block" data-aos="zoom-in">Leave a
+                        Request</button>
+                </a>
+            </ul>
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Main Start -->
+    <main>
+        <section class="hero">
+            <div class="container-fluid p-0">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper" data-aos="fade-left">
+                        <div class="swiper-slide">
+                            <img src="assets/image/slider/slider-1.png" class="winoids-img" alt="winoids Image">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/image/slider/2.png" class="winoids-img" alt="winoids Image">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/image/slider/3.png" class="winoids-img" alt="winoids Image">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/image/slider/4.png" class="winoids-img" alt="winoids Image">
+                        </div>
+                    </div>
+
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="welcome-section">
+            <div class="container">
+                <div class="welcome row" data-aos="fade-up">
+                    <div class="welcome__textbox col-md-6">
+                        <h1 class="tablet" data-aos="fade-up">Welcome</h1>
+                        <h2>Welcome to<br> MarryGold Films</h2>
+                        <p>
+                            We are a team of experienced professionals passionate about the art of creating unique
+                            wedding memories.
+                            Our goal is not just to take photographs, but to capture the magical moments of your special
+                            day so that they remain with
+                            you forever in the most vivid and heartfelt details.<br><br>
+                            We take pride in our ability to see and preserve the beauty in every moment, ensuring that
+                            each image tells a part of your story.<br><br>
+                        </p>
+
+                        <a href="about.html" class="text-decoration-none d-flex align-items-center arrow-link">
+                            About us
+                            <span class="ms-2 arrow">&rarr;</span>
+                        </a>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="/assets/image/welcome.png" alt="" class="welcome-img">
+                    </div>
+                </div>
+            </div>
+
+            <div class="img-container" data-aos="fade-up">
+                <img src="/assets/image/flower.png" alt="flower" class="flower.png">
+            </div>
+        </section>
+
+
+
+
+        <section class="gallery my-5">
+            <div class="container text-center">
+                <h2 class="mb-4 title" data-aos="fade-up" data-aos-duration="500">Wedding Photography Gallery</h2>
+                <p class="mb-5 pb-5 text-desc" data-aos="fade-up" data-aos-duration="500">Explore our collection of
+                    beautifully captured moments that tell the
+                    story of love, joy, and celebration from weddings we've had the honor to photograph.
+                </p>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-duration="500">
+                            <img src="assets/image/gallery/1.png" alt="Image 1" class="img-fluid gallery-img">
+                        </div>
+                        <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-duration="500">
+                            <img src="assets/image/gallery/2.png" alt="Image 2" class="img-fluid gallery-img">
+                        </div>
+                        <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-duration="500">
+                            <img src="assets/image/gallery/3.png" alt="Image 3" class="img-fluid gallery-img">
+                        </div>
+                        <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-duration="500">
+                            <img src="assets/image/gallery/4.png" alt="Image 4" class="img-fluid gallery-img">
+                        </div>
+                        <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-duration="500">
+                            <img src="assets/image/gallery/5.png" alt="Image 5" class="img-fluid gallery-img">
+                        </div>
+                        <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-duration="500">
+                            <img src="assets/image/gallery/6.png" alt="Image 6" class="img-fluid gallery-img">
+                        </div>
+                        <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-duration="500">
+                            <img src="assets/image/gallery/7.png" alt="Image 7" class="img-fluid gallery-img">
+                        </div>
+                        <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-duration="500">
+                            <img src="assets/image/gallery/8.png" alt="Image 8" class="img-fluid gallery-img">
+                        </div>
+                        <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-duration="500">
+                            <img src="assets/image/gallery/9.png" alt="Image 9" class="img-fluid gallery-img">
+                        </div>
+                        <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-duration="500">
+                            <img src="assets/image/gallery/10.png" alt="Image 10" class="img-fluid gallery-img">
+                        </div>
+                        <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-duration="500">
+                            <img src="assets/image/gallery/11.png" alt="Image 11" class="img-fluid gallery-img">
+                        </div>
+                        <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-duration="500">
+                            <img src="assets/image/gallery/12.png" alt="Image 12" class="img-fluid gallery-img">
+                        </div>
+                        <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-duration="500">
+                            <img src="assets/image/gallery/13.png" alt="Image 13" class="img-fluid gallery-img">
+                        </div>
+                        <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-duration="500">
+                            <img src="assets/image/gallery/14.png" alt="Image 14" class="img-fluid gallery-img">
+                        </div>
+                        <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-duration="500">
+                            <img src="assets/image/gallery/15.png" alt="Image 15" class="img-fluid gallery-img">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Модальное окно -->
+                <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="imageModalLabel">Image</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="" id="modalImage" class="img-fluid" alt="Selected Image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="d-flex justify-content-center align-items-center">
+                    <a href="gallery.html">
+                        <button class="btn btn-primary btn-marrygold d-lg-block" data-aos="zoom-in">View All</button>
+                    </a>
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+        <section class="welcome-section">
+            <div class="container">
+                <div class="welcome row" data-aos="fade-up">
+                    <div class="welcome__textbox col-md-6">
+                        <h1 class="tablet" data-aos="fade-up">Welcome</h1>
+                        <h2>Welcome to<br> MarryGold Films</h2>
+                        <p>
+                            We are a team of experienced professionals passionate about the art of creating unique
+                            wedding memories.
+                            Our goal is not just to take photographs, but to capture the magical moments of your special
+                            day so that they remain with
+                            you forever in the most vivid and heartfelt details.<br><br>
+                            We take pride in our ability to see and preserve the beauty in every moment, ensuring that
+                            each image tells a part of your story.<br><br>
+                        </p>
+
+                        <a href="about.html" class="text-decoration-none d-flex align-items-center arrow-link">
+                            About us
+                            <span class="ms-2 arrow">&rarr;</span>
+                        </a>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="/assets/image/welcome.png" alt="" class="welcome-img">
+                    </div>
+                </div>
+            </div>
+
+            <div class="img-container" data-aos="fade-up">
+                <img src="/assets/image/flower.png" alt="flower" class="flower.png">
+            </div>
+        </section>
+
+
+
+        <section class="why-we py-5">
+            <div class="container text-center">
+                <p class="mb-3 text-pink">MarryGold Films - Wedding Photography</p>
+                <h2 class="mb-4 title">Why Choose Us</h2>
+                <p class="mb-5 text-desc">Discover why couples trust us to preserve their most cherished memories with
+                    <br> unparalleled professionalism and creativity.
+                </p>
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <div class="card text-center">
+                            <img src="assets/image/card1.png" class="card-img-top mx-auto" alt="Card 1"
+                                style="width: 15%; height: auto;">
+                            <div class="card-body">
+                                <h5 class="card-title">Exceptional Service</h5>
+                                <p class="card-text">Professional, friendly support from consultation to photo delivery.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="assets/image/card2.png" class="card-img-top mx-auto" alt="Card 2"
+                                style="width: 15%; height: auto;">
+                            <div class="card-body">
+                                <h5 class="card-title">Creative Vision</h5>
+                                <p class="card-text">Artistic and creative photography capturing candid moments and
+                                    intricate details.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="assets/image/card3.png" class="card-img-top mx-auto" alt="Card 3"
+                                style="width: 15%; height: auto;">
+                            <div class="card-body">
+                                <h5 class="card-title">Expertise and Experience</h5>
+                                <p class="card-text">Years of experience and artistic skill ensure stunning, timeless
+                                    images.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="assets/image/card4.png" class="card-img-top mx-auto" alt="Card 4"
+                                style="width: 15%; height: auto;">
+                            <div class="card-body">
+                                <h5 class="card-title">Personalized Approach</h5>
+                                <p class="card-text">We tailor our services to match your unique vision and style.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="assets/image/card5.png" class="card-img-top mx-auto" alt="Card 4"
+                                style="width: 15%; height: auto;">
+                            <div class="card-body">
+                                <h5 class="card-title">High-Quality Images</h5>
+                                <p class="card-text">State-of-the-art equipment and advanced editing for
+                                    high-resolution, beautifully edited photos.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="assets/image/card6.png" class="card-img-top mx-auto" alt="Card 4"
+                                style="width: 15%; height: auto;">
+                            <div class="card-body">
+                                <h5 class="card-title">Comprehensive Coverage</h5>
+                                <p class="card-text">Full-day coverage from preparations to the final dance, with
+                                    flexible packages.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="our-services">
+            <div class="container text-center">
+                <div class="row align-items-center">
+                    <!-- Левый блок с заголовком и текстом -->
+                    <div class="col-md-9 text-start">
+                        <h2 class="mb-3 title">Our Services</h2>
+                        <p class="mb-5 text-desc">Preserving Your Love Story with Timeless Elegance and Artistic
+                            Precision, Crafting Stunning Visual Narratives that Capture the Essence of Your Special Day
+                        </p>
+                    </div>
+
+                    <!-- Правый блок со ссылкой -->
+                    <div class="col-md-3 text-end">
+                        <a href="about.html"
+                            class="text-decoration-none d-flex justify-content-end align-items-center arrow-link">
+                            View All
+                            <span class="ms-2 arrow">&rarr;</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+                        <div class="card service-card">
+                            <img src="assets/image/gallery/3.png" class="card-img" alt="Service 1">
+                            <div class="card-img-overlay-services d-flex justify-content-center align-items-center">
+                                <h5 class="card-title-services text-white">Pre-Wedding Photoshoot</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 mb-4">
+                        <div class="card service-card">
+                            <img src="assets/image/gallery/2.png" class="card-img" alt="Service 2">
+                            <div class="card-img-overlay-services d-flex justify-content-center align-items-center">
+                                <h5 class="card-title-services text-white">Wedding Day Photography</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 mb-4">
+                        <div class="card service-card">
+                            <img src="assets/image/gallery/5.png" class="card-img" alt="Service 3">
+                            <div class="card-img-overlay-services d-flex justify-content-center align-items-center">
+                                <h5 class="card-title-services text-white">Themed Photoshoots with Props</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 mb-4">
+                        <div class="card service-card">
+                            <img src="assets/image/gallery/1.png" class="card-img" alt="Service 4">
+                            <div class="card-img-overlay-services d-flex justify-content-center align-items-center">
+                                <h5 class="card-title-services text-white">Retouching and Album Design</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="plan-section text-center">
+            <div class="container h-100 d-flex flex-column justify-content-center align-items-center">
+                <h2 class="text-white mb-3  title">Plan Your Ideal Wedding With Us!</h2>
+                <p class="text-desc text-white mb-4">Don't miss the opportunity to capture every moment of your special
+                    day. Contact us today and we will help make your wedding unforgettable! Call us at: 07738954085 or
+                    write to us for more details. We're here to help make your dream wedding a reality!</p>
+                <div class="d-flex flex-column flex-lg-row justify-content-center gap-4">
+                    <button class="btn btn-plan btn-marrygold" data-aos="zoom-in">Call</button>
+                    <button class="btn btn-plan btn-marrygold" data-aos="zoom-in">Leave a Request</button>
+                </div>
+
+            </div>
+        </div>
+
+
+
+        <section class="packages-section text-center">
+            <div class="container">
+                <h2 class="mb-3 title">Our Wedding <br> Photography Packages</h2>
+                <p class="mb-5 text-desc">Choose the perfect package to capture the unforgettable moments of your
+                    special day. <br> Whether you're looking for full-day coverage or a more intimate session, <br>we
+                    have options to suit every need and budget.</p>
+
+                <div class="row d-flex justify-content-center">
+                    <!-- Карточка 1 -->
+                    <div class="col-md-5 mb-5">
+                        <div class="package-card p-3">
+                            <img src="assets/image/slider/2.png" alt="Package 1" class="img-fluid mb-3">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h5 class="card-title"> Full Wedding Photography Package</h5>
+                                <span class="price">₹100</span>
+                            </div>
+                            <div class="text-start">
+                                <p class="card-text mb-2">Experience complete coverage of your special day with our
+                                    all-inclusive package:</p>
+                                <ul class="card-text mb-4" style="padding-left: 30px;">
+                                    <li>Full-Day Coverage: From pre-wedding preparations to the final moments of the
+                                        reception</li>
+                                    <li>Professional Photo Editing: High-quality, artistically edited images</li>
+                                    <li>Custom Photo Album: A beautifully crafted photo book to cherish your memories
+                                    </li>
+                                    <li>Online Gallery: Easy access to all your photos for sharing and downloading</li>
+                                </ul>
+                                <button class="btn btn-marrygold">Order Now</button>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Карточка 2 -->
+                    <div class="col-md-5 mb-5">
+                        <div class="package-card p-3">
+                            <img src="assets/image/slider/2.png" alt="Package 1" class="img-fluid mb-3">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h5 class="card-title"> Ceremony Package</h5>
+                                <span class="price">₹100</span>
+                            </div>
+                            <div class="text-start">
+                                <p class="card-text mb-2">Experience complete coverage of your special day with our
+                                    all-inclusive package:</p>
+                                <ul class="card-text mb-4" style="padding-left: 30px;">
+                                    <li>Full-Day Coverage: From pre-wedding preparations to the final moments of the
+                                        reception</li>
+                                    <li>Professional Photo Editing: High-quality, artistically edited images</li>
+                                    <li>Custom Photo Album: A beautifully crafted photo book to cherish your memories
+                                    </li>
+                                    <li>Online Gallery: Easy access to all your photos for sharing and downloading</li>
+                                </ul>
+                                <button class="btn btn-marrygold">Order Now</button>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Карточка 3 -->
+                    <div class="col-md-5 mb-5">
+                        <div class="package-card p-3">
+                            <img src="assets/image/slider/2.png" alt="Package 1" class="img-fluid mb-3">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h5 class="card-title">Engagement Session</h5>
+                                <span class="price">₹100</span>
+                            </div>
+                            <div class="text-start">
+                                <p class="card-text mb-2">Experience complete coverage of your special day with our
+                                    all-inclusive package:</p>
+                                <ul class="card-text mb-4" style="padding-left: 30px;">
+                                    <li>Full-Day Coverage: From pre-wedding preparations to the final moments of the
+                                        reception</li>
+                                    <li>Professional Photo Editing: High-quality, artistically edited images</li>
+                                    <li>Custom Photo Album: A beautifully crafted photo book to cherish your memories
+                                    </li>
+                                    <li>Online Gallery: Easy access to all your photos for sharing and downloading</li>
+                                </ul>
+                                <button class="btn btn-marrygold">Order Now</button>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Карточка 4 -->
+                    <div class="col-md-5 mb-5">
+                        <div class="package-card p-3">
+                            <img src="assets/image/slider/2.png" alt="Package 1" class="img-fluid mb-3">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h5 class="card-title">Short-Event Package</h5>
+                                <span class="price">₹100</span>
+                            </div>
+                            <div class="text-start">
+                                <p class="card-text mb-2">Experience complete coverage of your special day with our
+                                    all-inclusive package:</p>
+                                <ul class="card-text mb-4" style="padding-left: 30px;">
+                                    <li>Full-Day Coverage: From pre-wedding preparations to the final moments of the
+                                        reception</li>
+                                    <li>Professional Photo Editing: High-quality, artistically edited images</li>
+                                    <li>Custom Photo Album: A beautifully crafted photo book to cherish your memories
+                                    </li>
+                                    <li>Online Gallery: Easy access to all your photos for sharing and downloading</li>
+                                </ul>
+                                <button class="btn btn-marrygold">Order Now</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="achievements">
+            <div class="container text-center">
+                <h2 class="mb-3 title">Our Achievements</h2>
+                <p class="mb-5 text-desc">He is proud of his success in wedding photography</p>
+
+                <div class="row justify-content-center p-3">
+                    <!-- Первая колонка -->
+                    <div class="col-lg-4 col-md-6 mb-4 achievement-item">
+                        <h3 class="display-4 text-gold">500+</h3>
+                        <p class="text-18">Satisfied Clients</p>
+                    </div>
+                    <!-- Вторая колонка -->
+                    <div class="col-lg-4 col-md-6 mb-4 achievement-item">
+                        <h3 class="display-4 text-gold">100%</h3>
+                        <p class="text-18">Professionalism</p>
+                    </div>
+                    <!-- Третья колонка -->
+                    <div class="col-lg-4 col-md-6 mb-4 achievement-item">
+                        <h3 class="display-4 text-gold">100+</h3>
+                        <p class="text-18">Awards Won</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="testimonials">
+            <div class="container">
+                <!-- Заголовок -->
+                <h2 class="text-center mb-5 title">What Our Clients Say About Us</h2>
+
+                <!-- Ряд с карточками комментариев -->
+                <div class="row justify-content-center">
+                    <!-- Карточка 1 -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="testimonial-card p-4">
+                            <div class="d-flex align-items-center mb-3">
+                                <img src="assets/image/comment1.png" alt="Client 1" class="rounded-circle client-photo">
+                                <div class="ms-3">
+                                    <h5 class="mb-0">Lila Doe</h5>
+                                    <div class="stars text-warning">
+                                        ★★★★★
+                                    </div>
+                                </div>
+                            </div>
+                            <h6 class="fw-bold mb-2">Amazing Service!</h6>
+                            <p class="comment-text">We couldn’t be happier with the service we received from MarryGold
+                                Films . They made us feel so comfortable and captured every emotion of our wedding day.
+                                The photo album they created is a treasure we will cherish forever. Highly recommend!
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Карточка 2 -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="testimonial-card p-4">
+                            <div class="d-flex align-items-center mb-3">
+                                <img src="assets/image/comment2.png" alt="Client 2" class="rounded-circle client-photo">
+                                <div class="ms-3">
+                                    <h5 class="mb-0">Jane Smith</h5>
+                                    <div class="stars text-warning">
+                                        ★★★★★
+                                    </div>
+                                </div>
+                            </div>
+                            <h6 class="fw-bold mb-2">Highly Recommend!</h6>
+                            <p class="comment-text">MarryGold Films exceeded all our expectations! From the engagement
+                                shoot to the big day, their team was professional, friendly, and incredibly talented.
+                                Every moment was captured beautifully, and the photos are simply breathtaking. We can’t
+                                stop looking at them!</p>
+                        </div>
+                    </div>
+
+                    <!-- Карточка 3 -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="testimonial-card p-4">
+                            <div class="d-flex align-items-center mb-3">
+                                <img src="assets/image/comment3.png" alt="Client 3" class="rounded-circle client-photo">
+                                <div class="ms-3">
+                                    <h5 class="mb-0">Anna Wilson</h5>
+                                    <div class="stars text-warning">
+                                        ★★★★★
+                                    </div>
+                                </div>
+                            </div>
+                            <h6 class="fw-bold mb-2">Exceptional Work!</h6>
+                            <p class="comment-text">Working with MarryGold Films was an amazing experience. Their
+                                attention to detail and creativity were beyond what we imagined. The photos are
+                                stunning, and the whole process was seamless. They made our wedding memories come to
+                                life!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="blog-buy info text-left">
+            <div class="container">
+                <div class="row align-items-center gap-5">
+                    <div class="col-12 col-md-5 column-left mb-4 mb-md-0" data-aos="fade-right">
+                        <img src="assets/image/form-img.png" alt="books-winoids" class="img-fluid filter"
+                            data-aos="zoom-in">
+                    </div>
+
+                    <div class="col-12 col-md-6 now-start-text" data-aos="fade-left">
+                        <h2 class="title mb-4" data-aos="fade-up" data-aos-delay="100">
+                            Contact us for custom offers
+                        </h2>
+
+                        <p class="text-desc mb-5" data-aos="fade-up" data-aos-delay="300">
+                            Fill out the form below to receive a free consultation and learn more about our services.
+                        </p>
+
+                        <form>
+                            <div class="mb-3" data-aos="fade-right">
+                                <label for="fullName" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="fullName" placeholder="Your name">
+                            </div>
+                            <div class="mb-3" data-aos="fade-left" data-aos-delay="100">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                            </div>
+                            <div class="mb-3" data-aos="fade-left" data-aos-delay="100">
+                                <label for="phone">Phone Number</label>
+                                <input id="phone" type="tel" class="form-control" placeholder="+91 (555) 000-0000">
+                            </div>
+                            <div class="mb-3" data-aos="fade-left" data-aos-delay="100">
+                                <label for="message" class="form-label">Additional information</label>
+                                <textarea class="form-control" id="message" rows="5"
+                                    placeholder="Tell us about your event..."></textarea>
+                            </div>
+                            <div class="d-grid" data-aos="fade-up" data-aos-delay="200">
+                                <button type="submit" class="btn btn-marrygold text-white">Send</button>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq-section">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="now-start-text" data-aos="fade-left">
+                        <div class="row">
+                            <div class="col-md-12 text-center mb-4">
+                                <h2 class="title mb-4" data-aos="fade-up">Frequently Asked Questions</h2>
+                                <p class="text-desc mb-5">Everything you need to know: answers to the most popular
+                                    questions</p>
+                            </div>
+                        </div>
+                        <div class="row faq-block">
+                            <div class="col-md-12">
+                                <div class="accordion" id="faqAccordion">
+                                    <!-- FAQ Item 1 -->
+                                    <div class="card-faq open" data-aos="fade-up" data-aos-delay="300">
+                                        <div class="card-header" id="faqHeading1">
+                                            <span class="text18 "><strong> long will it take to receive our wedding
+                                                    photos?</strong></span>
+                                            <span class="faq-icon plus">+</span>
+                                            <span class="faq-icon check">x</span>
+                                        </div>
+                                        <div id="faqCollapse1" class="card-body">
+                                            You can expect to receive your fully edited wedding photos within 4 to 6
+                                            weeks after your wedding day. We take the time to carefully curate and
+                                            professionally edit each image to ensure the highest quality. If you need a
+                                            few sneak peeks sooner, we’re happy to provide a small selection within a
+                                            few days after the event!
+                                        </div>
+                                    </div>
+                                    <!-- FAQ Item 2 -->
+                                    <div class="card-faq" data-aos="fade-up" data-aos-delay="400">
+                                        <div class="card-header" id="faqHeading2">
+                                            <span class="text18">
+                                                <strong>Do you offer engagement photo sessions as part of your
+                                                    packages?</strong></span>
+                                            <span class="faq-icon plus">+</span>
+                                            <span class="faq-icon check">x</span>
+                                        </div>
+                                        <div id="faqCollapse2" class="card-body">
+                                            Updating your PC drivers is important as they act as software that allows
+                                            you to control and oversee different hardware components in your computer.
+                                            When these drivers become outdated, it can lead to various hardware-related
+                                            problems and cause frequent glitches and crashes. Therefore, maintaining
+                                            up-to-date PC drivers is vital to prevent any such issues.
+                                        </div>
+                                    </div>
+                                    <!-- FAQ Item 3 -->
+                                    <div class="card-faq" data-aos="fade-up" data-aos-delay="500">
+                                        <div class="card-header" id="faqHeading3">
+                                            <span class="text18">
+                                                <strong>Can we customize a photography package to suit our specific
+                                                    needs? </strong></span>
+                                            <span class="faq-icon plus">+</span>
+                                            <span class="faq-icon check">x</span>
+                                        </div>
+                                        <div id="faqCollapse3" class="card-body">
+                                            Winoids show each device requiring an update separately. This gives you the
+                                            authority to select the drivers you want to download. Typically, it's not
+                                            essential to update devices that are working perfectly, as new drivers may
+                                            introduce issues not present in the old ones. However, if you encounter
+                                            problems with a device or software connected to it, updating drivers is
+                                            usually the best solution to fix such issues.
+                                        </div>
+                                    </div>
+                                    <!-- FAQ Item 4 -->
+                                    <div class="card-faq" data-aos="fade-up" data-aos-delay="600">
+                                        <div class="card-header" id="faqHeading4">
+                                            <span class="text18"><strong>Do you provide both digital and printed photo
+                                                    albums?</strong></span>
+                                            <span class="faq-icon plus">+</span>
+                                            <span class="faq-icon check">x</span>
+                                        </div>
+                                        <div id="faqCollapse4" class="card-body">
+                                            Yes! With a free trial, you can run a scan on your PC and find out all the
+                                            drivers that need an update. However, to update the latest versions of
+                                            drivers, you need to opt for the premium version. Download your free trial
+                                            now.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container py-5">
+            <div class="row text-center">
+                <!-- Первая колонка: Логотип, текст и иконки -->
+                <div class="col-md-4">
+                    <h5>Логотип</h5>
+                    <p>Ваш текст или описание</p>
+                    <div>
+                        <a href="#" class="me-2"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="me-2"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+        
+                <!-- Вторая колонка: Навигация -->
+                <div class="col-md-4">
+                    <h5>Навигация</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Главная</a></li>
+                        <li><a href="#">О нас</a></li>
+                        <li><a href="#">Услуги</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </div>
+        
+                <!-- Третья колонка: Контакты -->
+                <div class="col-md-4">
+                    <h5>Контакты</h5>
+                    <p>Телефон: +1 234 567 890</p>
+                    <p>Email: info@example.com</p>
+                    <p>Адрес: Город, Улица, Дом</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Подключение Font Awesome для иконок -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- Main End -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="/assets/js/main.js"></script>
+
+
+</body>
+
+</html>
