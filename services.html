@@ -133,7 +133,7 @@
         <section class="services-section">
             <div class="container">
                 <div class="row">
-                    <div class="col-12 mb-4">
+                    <div class="col-12 mb-4" data-aos="fade-up">
                         <div class="card py-3">
                             <div class="row no-gutters">
                                 <div class="col-md-5">
@@ -160,7 +160,7 @@
                         </div>
                     </div>
         
-                    <div class="col-12 mb-4">
+                    <div class="col-12 mb-4" data-aos="fade-up" data-aos-delay="100">
                         <div class="card py-3">
                             <div class="row no-gutters">
                                 <div class="col-md-5">
@@ -178,7 +178,6 @@
                                                 <li><strong>Family Portraits:</strong> Professionally staged and candid family photos, ensuring that you have memories of the people who matter most.</li>
                                                 <li><strong>Basic Photo Editing:</strong> Essential photo enhancements to ensure that the images are beautiful and clear.</li>
                                             </ul>
-                                            
                                         </div>
                                         <a href="#" class="btn btn-primary btn-marrygold mt-auto">Купить</a>
                                     </div>
@@ -187,7 +186,7 @@
                         </div>
                     </div>
         
-                    <div class="col-12 mb-4">
+                    <div class="col-12 mb-4" data-aos="fade-up" data-aos-delay="200">
                         <div class="card py-3">
                             <div class="row no-gutters">
                                 <div class="col-md-5">
@@ -205,8 +204,6 @@
                                                 <li><strong>Creative and Romantic Photography:</strong> We take pride in crafting imaginative and meaningful engagement photos that reflect your love story.</li>
                                                 <li><strong>Flexibility in Location and Style:</strong> Whether you want a casual, relaxed vibe or something more formal, we adapt the session to your preferences, ensuring the photos reflect your personal style.</li>
                                             </ul>
-                                            
-                                            
                                         </div>
                                         <a href="#" class="btn btn-primary btn-marrygold mt-auto">Купить</a>
                                     </div>
@@ -217,6 +214,7 @@
                 </div>
             </div>
         </section>
+        
         
       
         
@@ -266,12 +264,12 @@
         </section>
 
 
-        <section class="gallery gallery-section my-5">
+        <section class="gallery my-5 gallery-section">
             <div class="container text-center">
                 <h2 class="mb-4 title" data-aos="fade-up" data-aos-duration="500">Wedding Photography Gallery</h2>
-                <p class="mb-5 pb-5 text-desc" data-aos="fade-up" data-aos-duration="500">Explore our collection of
-                    beautifully captured moments that tell the
-                    story of love, joy, and celebration from weddings we've had the honor to photograph.
+                <p class="mb-5 pb-5 text-desc" data-aos="fade-up" data-aos-duration="500">
+                    Explore our collection of beautifully captured moments that tell the story of love, joy, and celebration
+                    from weddings we've had the honor to photograph.
                 </p>
                 <div class="container">
                     <div class="row">
@@ -322,45 +320,38 @@
                         </div>
                     </div>
                 </div>
-
+        
                 <!-- Модальное окно -->
-                <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel"
-                    aria-hidden="true">
-                    <div class="modal-dialog modal-lg">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="imageModalLabel">Image</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                <img src="" id="modalImage" class="img-fluid" alt="Selected Image">
-                            </div>
-                        </div>
+                <div class="modal" id="imageModal">
+                    <div class="modal-content" id="modalContent">
+                        <span class="close" id="closeModal">&times;</span>
+                        <img src="" id="modalImage" class="img-fluid" alt="Selected Image">
+                        <button class="btn bold-btn" id="prevBtn">&lt;</button>
+                        <button class="btn bold-btn" id="nextBtn">&gt;</button>
                     </div>
                 </div>
+                
 
 
+  
+        
                 <div class="d-flex justify-content-center align-items-center">
                     <a href="gallery.html">
                         <button class="btn btn-primary btn-marrygold d-lg-block" data-aos="zoom-in">View All</button>
                     </a>
                 </div>
-
-
             </div>
-
         </section>
 
 
     </main>
 
     <footer>
-        <div class="container-fluid cover-footer">
+        <div class="container-fluid cover-footer" data-aos="fade-up">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6 mb-4">
-                        <div class="d-flex align-items-center mb-5" data-aos="fade-right">
+                    <div class="col-md-6 mb-4" data-aos="fade-left">
+                        <div class="d-flex align-items-center mb-5">
                             <a href="../index.html" class="logo-link">
                                 <img src="assets/image/Logo.svg" alt="logo" class="header-logo">
                             </a>
@@ -379,8 +370,8 @@
                             </a>
                         </div>
                     </div>
-
-                    <div class="col-md-3 mb-4">
+    
+                    <div class="col-md-3 mb-4" data-aos="fade-up">
                         <h5 class="mb-4">Important Links</h5>
                         <ul class="list-unstyled">
                             <li class="mb-3"><a href="index.html" class="nav-footer">Home</a></li>
@@ -390,8 +381,8 @@
                             <li class="mb-3"><a href="contact.html" class="nav-footer">Contact Us</a></li>
                         </ul>
                     </div>
-
-                    <div class="col-md-3 mb-4">
+    
+                    <div class="col-md-3 mb-4" data-aos="fade-right">
                         <h5 class="mb-4">Contact Us</h5>
                         <p class="nav-footer mb-3">
                             Email: <a href="mailto:marrygoldfilms@gmail.com" class="text-white">marrygoldfilms@gmail.com</a>
@@ -400,15 +391,16 @@
                         <p class="nav-footer mb-3">Location: Sifty Arts Campus Boring Patliputra Road, Opposite Vijaya Bank, near A.N. College, Patna, Bihar 800001</p>
                     </div>
                 </div>
-
+    
                 <hr>
-
-                <div class="d-flex justify-content-center py-4">© Copyright 2024, All Rights Reserved by MarryGold Films - Wedding Photography</div>
+    
+                <div class="d-flex justify-content-center py-4" data-aos="fade-up">© Copyright 2024, All Rights Reserved by MarryGold Films - Wedding Photography</div>
             </div>
         </div>
-        <img src="assets/image/flower1.svg" alt="Decorative Image" class="footer-image">
-        <img src="assets/image/flower1.svg" alt="Decorative Image" class="footer-image2">
+        <img src="assets/image/flower1.svg" alt="Decorative Image" class="footer-image" data-aos="fade-up">
+        <img src="assets/image/flower1.svg" alt="Decorative Image" class="footer-image2" data-aos="fade-up">
     </footer>
+    
 
 
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>

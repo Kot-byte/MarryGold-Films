@@ -127,4 +127,59 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
+
+
+  // Открытие модального окна
+const images = document.querySelectorAll('.gallery-img');
+const modal = document.getElementById('imageModal');
+const modalImg = document.getElementById('modalImage');
+const closeModal = document.getElementById('closeModal');
+const prevBtn = document.getElementById('prevBtn');
+const nextBtn = document.getElementById('nextBtn');
+
+images.forEach((img, index) => {
+    img.addEventListener('click', () => {
+        modal.style.display = 'block';
+        modalImg.src = img.src;
+        modalImg.dataset.index = index; // сохраняем индекс изображения
+        document.body.classList.add('modal-open'); // Запретить прокрутку
+    });
+});
+
+// Закрытие модального окна
+closeModal.addEventListener('click', () => {
+    modal.style.display = 'none';
+    document.body.classList.remove('modal-open'); // Разрешить прокрутку
+});
+
+modal.addEventListener('click', (event) => {
+    if (event.target === modal) {
+        modal.style.display = 'none';
+        document.body.classList.remove('modal-open'); // Разрешить прокрутку
+    }
+});
+
+// Обработчики для кнопок "Назад" и "Вперед"
+prevBtn.addEventListener('click', (event) => {
+    event.stopPropagation(); // Остановить всплытие события
+    let currentIndex = parseInt(modalImg.dataset.index);
+    if (currentIndex > 0) {
+        currentIndex--;
+        modalImg.src = images[currentIndex].src;
+        modalImg.dataset.index = currentIndex;
+    }
+});
+
+nextBtn.addEventListener('click', (event) => {
+    event.stopPropagation(); // Остановить всплытие события
+    let currentIndex = parseInt(modalImg.dataset.index);
+    if (currentIndex < images.length - 1) {
+        currentIndex++;
+        modalImg.src = images[currentIndex].src;
+        modalImg.dataset.index = currentIndex;
+    }
+});
+
+    
+
 });

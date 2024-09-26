@@ -168,9 +168,9 @@
         <section class="gallery my-5">
             <div class="container text-center">
                 <h2 class="mb-4 title" data-aos="fade-up" data-aos-duration="500">Wedding Photography Gallery</h2>
-                <p class="mb-5 pb-5 text-desc" data-aos="fade-up" data-aos-duration="500">Explore our collection of
-                    beautifully captured moments that tell the
-                    story of love, joy, and celebration from weddings we've had the honor to photograph.
+                <p class="mb-5 pb-5 text-desc" data-aos="fade-up" data-aos-duration="500">
+                    Explore our collection of beautifully captured moments that tell the story of love, joy, and celebration
+                    from weddings we've had the honor to photograph.
                 </p>
                 <div class="container">
                     <div class="row">
@@ -221,34 +221,27 @@
                         </div>
                     </div>
                 </div>
-
+        
                 <!-- Модальное окно -->
-                <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel"
-                    aria-hidden="true">
-                    <div class="modal-dialog modal-lg">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="imageModalLabel">Image</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                <img src="" id="modalImage" class="img-fluid" alt="Selected Image">
-                            </div>
-                        </div>
+                <div class="modal" id="imageModal">
+                    <div class="modal-content" id="modalContent">
+                        <span class="close" id="closeModal">&times;</span>
+                        <img src="" id="modalImage" class="img-fluid" alt="Selected Image">
+                        <button class="btn bold-btn" id="prevBtn">&lt;</button>
+                        <button class="btn bold-btn" id="nextBtn">&gt;</button>
                     </div>
                 </div>
+                
 
 
+  
+        
                 <div class="d-flex justify-content-center align-items-center">
                     <a href="gallery.html">
                         <button class="btn btn-primary btn-marrygold d-lg-block" data-aos="zoom-in">View All</button>
                     </a>
                 </div>
-
-
             </div>
-
         </section>
 
 
@@ -288,14 +281,14 @@
 
         <section class="why-we py-5">
             <div class="container text-center">
-                <p class="mb-3 text-pink">MarryGold Films - Wedding Photography</p>
-                <h2 class="mb-4 title">Why Choose Us</h2>
-                <p class="mb-5 text-desc">Discover why couples trust us to preserve their most cherished memories with
+                <p class="mb-3 text-pink" data-aos="fade-up">MarryGold Films - Wedding Photography</p>
+                <h2 class="mb-4 title" data-aos="fade-up">Why Choose Us</h2>
+                <p class="mb-5 text-desc" data-aos="fade-up">Discover why couples trust us to preserve their most cherished memories with
                     <br> unparalleled professionalism and creativity.
                 </p>
                 <div class="row">
                     <div class="col-md-4 mb-4">
-                        <div class="card text-center">
+                        <div class="card text-center" data-aos="zoom-in">
                             <img src="assets/image/card1.png" class="card-img-top mx-auto" alt="Card 1"
                                 style="width: 15%; height: auto;">
                             <div class="card-body">
@@ -306,7 +299,7 @@
                         </div>
                     </div>
                     <div class="col-md-4 mb-4">
-                        <div class="card">
+                        <div class="card" data-aos="zoom-in">
                             <img src="assets/image/card2.png" class="card-img-top mx-auto" alt="Card 2"
                                 style="width: 15%; height: auto;">
                             <div class="card-body">
@@ -317,7 +310,7 @@
                         </div>
                     </div>
                     <div class="col-md-4 mb-4">
-                        <div class="card">
+                        <div class="card" data-aos="zoom-in">
                             <img src="assets/image/card3.png" class="card-img-top mx-auto" alt="Card 3"
                                 style="width: 15%; height: auto;">
                             <div class="card-body">
@@ -328,7 +321,7 @@
                         </div>
                     </div>
                     <div class="col-md-4 mb-4">
-                        <div class="card">
+                        <div class="card" data-aos="zoom-in">
                             <img src="assets/image/card4.png" class="card-img-top mx-auto" alt="Card 4"
                                 style="width: 15%; height: auto;">
                             <div class="card-body">
@@ -338,7 +331,7 @@
                         </div>
                     </div>
                     <div class="col-md-4 mb-4">
-                        <div class="card">
+                        <div class="card" data-aos="zoom-in">
                             <img src="assets/image/card5.png" class="card-img-top mx-auto" alt="Card 4"
                                 style="width: 15%; height: auto;">
                             <div class="card-body">
@@ -349,7 +342,7 @@
                         </div>
                     </div>
                     <div class="col-md-4 mb-4">
-                        <div class="card">
+                        <div class="card" data-aos="zoom-in">
                             <img src="assets/image/card6.png" class="card-img-top mx-auto" alt="Card 4"
                                 style="width: 15%; height: auto;">
                             <div class="card-body">
@@ -368,15 +361,15 @@
             <div class="container text-center">
                 <div class="row align-items-center">
                     <!-- Левый блок с заголовком и текстом -->
-                    <div class="col-md-9 text-start">
+                    <div class="col-md-9 text-start" data-aos="fade-up">
                         <h2 class="mb-3 title">Our Services</h2>
                         <p class="mb-5 text-desc">Preserving Your Love Story with Timeless Elegance and Artistic
                             Precision, Crafting Stunning Visual Narratives that Capture the Essence of Your Special Day
                         </p>
                     </div>
-
+        
                     <!-- Правый блок со ссылкой -->
-                    <div class="col-md-3 text-end">
+                    <div class="col-md-3 text-end" data-aos="fade-up">
                         <a href="about-us.html"
                             class="text-decoration-none d-flex justify-content-end align-items-center arrow-link">
                             View All
@@ -385,7 +378,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-6 mb-4">
+                    <div class="col-md-6 mb-4" data-aos="zoom-in" data-aos-delay="100">
                         <div class="card service-card">
                             <img src="assets/image/gallery/3.png" class="card-img" alt="Service 1">
                             <div class="card-img-overlay-services d-flex justify-content-center align-items-center">
@@ -393,8 +386,8 @@
                             </div>
                         </div>
                     </div>
-
-                    <div class="col-md-6 mb-4">
+        
+                    <div class="col-md-6 mb-4" data-aos="zoom-in" data-aos-delay="200">
                         <div class="card service-card">
                             <img src="assets/image/gallery/2.png" class="card-img" alt="Service 2">
                             <div class="card-img-overlay-services d-flex justify-content-center align-items-center">
@@ -402,8 +395,8 @@
                             </div>
                         </div>
                     </div>
-
-                    <div class="col-md-6 mb-4">
+        
+                    <div class="col-md-6 mb-4" data-aos="zoom-in" data-aos-delay="300">
                         <div class="card service-card">
                             <img src="assets/image/gallery/5.png" class="card-img" alt="Service 3">
                             <div class="card-img-overlay-services d-flex justify-content-center align-items-center">
@@ -411,8 +404,8 @@
                             </div>
                         </div>
                     </div>
-
-                    <div class="col-md-6 mb-4">
+        
+                    <div class="col-md-6 mb-4" data-aos="zoom-in" data-aos-delay="400">
                         <div class="card service-card">
                             <img src="assets/image/gallery/1.png" class="card-img" alt="Service 4">
                             <div class="card-img-overlay-services d-flex justify-content-center align-items-center">
@@ -423,11 +416,12 @@
                 </div>
             </div>
         </section>
+        
 
-        <div class="plan-section text-center">
+        <div class="plan-section text-center" data-aos="fade-up">
             <div class="container h-100 d-flex flex-column justify-content-center align-items-center">
-                <h2 class="text-white mb-3  title">Plan Your Ideal Wedding With Us!</h2>
-                <p class="text-desc text-white mb-4">Don't miss the opportunity to capture every moment of your special
+                <h2 class="text-white mb-3  title" data-aos="fade-up">Plan Your Ideal Wedding With Us!</h2>
+                <p class="text-desc text-white mb-4" data-aos="fade-up">Don't miss the opportunity to capture every moment of your special
                     day. Contact us today and we will help make your wedding unforgettable! Call us at: 07738954085 or
                     write to us for more details. We're here to help make your dream wedding a reality!</p>
                 <div class="d-flex flex-column flex-lg-row justify-content-center gap-4">
@@ -442,66 +436,60 @@
 
         <section class="packages-section text-center">
             <div class="container">
-                <h2 class="mb-3 title">Our Wedding <br> Photography Packages</h2>
-                <p class="mb-5 text-desc">Choose the perfect package to capture the unforgettable moments of your
+                <h2 class="mb-3 title" data-aos="fade-up">Our Wedding <br> Photography Packages</h2>
+                <p class="mb-5 text-desc" data-aos="fade-up">Choose the perfect package to capture the unforgettable moments of your
                     special day. <br> Whether you're looking for full-day coverage or a more intimate session, <br>we
                     have options to suit every need and budget.</p>
-
+        
                 <div class="row d-flex justify-content-center">
                     <!-- Карточка 1 -->
-                    <div class="col-md-5 mb-5">
+                    <div class="col-md-5 mb-5" data-aos="fade-up">
                         <div class="package-card p-3">
                             <img src="assets/image/slider/2.png" alt="Package 1" class="img-fluid mb-3">
                             <div class="d-flex justify-content-between align-items-center mb-2">
-                                <h5 class="card-title"> Full Wedding Photography Package</h5>
+                                <h5 class="card-title">Full Wedding Photography Package</h5>
                                 <span class="price">₹100</span>
                             </div>
                             <div class="text-start">
                                 <p class="card-text mb-2">Experience complete coverage of your special day with our
                                     all-inclusive package:</p>
                                 <ul class="card-text mb-4" style="padding-left: 30px;">
-                                    <li>Full-Day Coverage: From pre-wedding preparations to the final moments of the
-                                        reception</li>
+                                    <li>Full-Day Coverage: From pre-wedding preparations to the final moments of the reception</li>
                                     <li>Professional Photo Editing: High-quality, artistically edited images</li>
-                                    <li>Custom Photo Album: A beautifully crafted photo book to cherish your memories
-                                    </li>
+                                    <li>Custom Photo Album: A beautifully crafted photo book to cherish your memories</li>
                                     <li>Online Gallery: Easy access to all your photos for sharing and downloading</li>
                                 </ul>
                                 <button class="btn btn-marrygold">Order Now</button>
                             </div>
-
                         </div>
                     </div>
-
+        
                     <!-- Карточка 2 -->
-                    <div class="col-md-5 mb-5">
+                    <div class="col-md-5 mb-5" data-aos="fade-up">
                         <div class="package-card p-3">
-                            <img src="assets/image/slider/2.png" alt="Package 1" class="img-fluid mb-3">
+                            <img src="assets/image/slider/2.png" alt="Package 2" class="img-fluid mb-3">
                             <div class="d-flex justify-content-between align-items-center mb-2">
-                                <h5 class="card-title"> Ceremony Package</h5>
+                                <h5 class="card-title">Ceremony Package</h5>
                                 <span class="price">₹100</span>
                             </div>
                             <div class="text-start">
                                 <p class="card-text mb-2">Experience complete coverage of your special day with our
                                     all-inclusive package:</p>
                                 <ul class="card-text mb-4" style="padding-left: 30px;">
-                                    <li>Full-Day Coverage: From pre-wedding preparations to the final moments of the
-                                        reception</li>
+                                    <li>Full-Day Coverage: From pre-wedding preparations to the final moments of the reception</li>
                                     <li>Professional Photo Editing: High-quality, artistically edited images</li>
-                                    <li>Custom Photo Album: A beautifully crafted photo book to cherish your memories
-                                    </li>
+                                    <li>Custom Photo Album: A beautifully crafted photo book to cherish your memories</li>
                                     <li>Online Gallery: Easy access to all your photos for sharing and downloading</li>
                                 </ul>
                                 <button class="btn btn-marrygold">Order Now</button>
                             </div>
-
                         </div>
                     </div>
-
+        
                     <!-- Карточка 3 -->
-                    <div class="col-md-5 mb-5">
+                    <div class="col-md-5 mb-5" data-aos="fade-up">
                         <div class="package-card p-3">
-                            <img src="assets/image/slider/2.png" alt="Package 1" class="img-fluid mb-3">
+                            <img src="assets/image/slider/2.png" alt="Package 3" class="img-fluid mb-3">
                             <div class="d-flex justify-content-between align-items-center mb-2">
                                 <h5 class="card-title">Engagement Session</h5>
                                 <span class="price">₹100</span>
@@ -510,23 +498,20 @@
                                 <p class="card-text mb-2">Experience complete coverage of your special day with our
                                     all-inclusive package:</p>
                                 <ul class="card-text mb-4" style="padding-left: 30px;">
-                                    <li>Full-Day Coverage: From pre-wedding preparations to the final moments of the
-                                        reception</li>
+                                    <li>Full-Day Coverage: From pre-wedding preparations to the final moments of the reception</li>
                                     <li>Professional Photo Editing: High-quality, artistically edited images</li>
-                                    <li>Custom Photo Album: A beautifully crafted photo book to cherish your memories
-                                    </li>
+                                    <li>Custom Photo Album: A beautifully crafted photo book to cherish your memories</li>
                                     <li>Online Gallery: Easy access to all your photos for sharing and downloading</li>
                                 </ul>
                                 <button class="btn btn-marrygold">Order Now</button>
                             </div>
-
                         </div>
                     </div>
-
+        
                     <!-- Карточка 4 -->
-                    <div class="col-md-5 mb-5">
+                    <div class="col-md-5 mb-5" data-aos="fade-up">
                         <div class="package-card p-3">
-                            <img src="assets/image/slider/2.png" alt="Package 1" class="img-fluid mb-3">
+                            <img src="assets/image/slider/2.png" alt="Package 4" class="img-fluid mb-3">
                             <div class="d-flex justify-content-between align-items-center mb-2">
                                 <h5 class="card-title">Short-Event Package</h5>
                                 <span class="price">₹100</span>
@@ -535,41 +520,39 @@
                                 <p class="card-text mb-2">Experience complete coverage of your special day with our
                                     all-inclusive package:</p>
                                 <ul class="card-text mb-4" style="padding-left: 30px;">
-                                    <li>Full-Day Coverage: From pre-wedding preparations to the final moments of the
-                                        reception</li>
+                                    <li>Full-Day Coverage: From pre-wedding preparations to the final moments of the reception</li>
                                     <li>Professional Photo Editing: High-quality, artistically edited images</li>
-                                    <li>Custom Photo Album: A beautifully crafted photo book to cherish your memories
-                                    </li>
+                                    <li>Custom Photo Album: A beautifully crafted photo book to cherish your memories</li>
                                     <li>Online Gallery: Easy access to all your photos for sharing and downloading</li>
                                 </ul>
                                 <button class="btn btn-marrygold">Order Now</button>
                             </div>
-
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+        
 
 
         <section class="achievements">
             <div class="container text-center">
-                <h2 class="mb-3 title">Our Achievements</h2>
-                <p class="mb-5 text-desc">He is proud of his success in wedding photography</p>
+                <h2 class="mb-3 title" data-aos="fade-up">Our Achievements</h2>
+                <p class="mb-5 text-desc" data-aos="fade-up">He is proud of his success in wedding photography</p>
 
                 <div class="row justify-content-center p-3">
                     <!-- Первая колонка -->
-                    <div class="col-lg-4 col-md-6 mb-4 achievement-item">
+                    <div class="col-lg-4 col-md-6 mb-4 achievement-item" data-aos="zoom-in">
                         <h3 class="display-4 text-gold">500+</h3>
                         <p class="text-18">Satisfied Clients</p>
                     </div>
                     <!-- Вторая колонка -->
-                    <div class="col-lg-4 col-md-6 mb-4 achievement-item">
+                    <div class="col-lg-4 col-md-6 mb-4 achievement-item" data-aos="zoom-in">
                         <h3 class="display-4 text-gold">100%</h3>
                         <p class="text-18">Professionalism</p>
                     </div>
                     <!-- Третья колонка -->
-                    <div class="col-lg-4 col-md-6 mb-4 achievement-item">
+                    <div class="col-lg-4 col-md-6 mb-4 achievement-item"  data-aos="zoom-in">
                         <h3 class="display-4 text-gold">100+</h3>
                         <p class="text-18">Awards Won</p>
                     </div>
@@ -581,13 +564,13 @@
         <section class="testimonials">
             <div class="container">
                 <!-- Заголовок -->
-                <h2 class="text-center mb-5 title">What Our Clients Say About Us</h2>
+                <h2 class="text-center mb-5 title"  data-aos="fade-up">What Our Clients Say About Us</h2>
 
                 <!-- Ряд с карточками комментариев -->
                 <div class="row justify-content-center">
                     <!-- Карточка 1 -->
                     <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="testimonial-card p-4">
+                        <div class="testimonial-card p-4"  data-aos="zoom-in">
                             <div class="d-flex align-items-center mb-3">
                                 <img src="assets/image/comment1.png" alt="Client 1" class="rounded-circle client-photo">
                                 <div class="ms-3">
@@ -607,7 +590,7 @@
 
                     <!-- Карточка 2 -->
                     <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="testimonial-card p-4">
+                        <div class="testimonial-card p-4"  data-aos="zoom-in">
                             <div class="d-flex align-items-center mb-3">
                                 <img src="assets/image/comment2.png" alt="Client 2" class="rounded-circle client-photo">
                                 <div class="ms-3">
@@ -627,7 +610,7 @@
 
                     <!-- Карточка 3 -->
                     <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="testimonial-card p-4">
+                        <div class="testimonial-card p-4"  data-aos="zoom-in">
                             <div class="d-flex align-items-center mb-3">
                                 <img src="assets/image/comment3.png" alt="Client 3" class="rounded-circle client-photo">
                                 <div class="ms-3">
@@ -776,11 +759,11 @@
     </main>
 
     <footer>
-        <div class="container-fluid cover-footer">
+        <div class="container-fluid cover-footer" data-aos="fade-up">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6 mb-4">
-                        <div class="d-flex align-items-center mb-5" data-aos="fade-right">
+                    <div class="col-md-6 mb-4" data-aos="fade-left">
+                        <div class="d-flex align-items-center mb-5">
                             <a href="../index.html" class="logo-link">
                                 <img src="assets/image/Logo.svg" alt="logo" class="header-logo">
                             </a>
@@ -799,8 +782,8 @@
                             </a>
                         </div>
                     </div>
-
-                    <div class="col-md-3 mb-4">
+    
+                    <div class="col-md-3 mb-4" data-aos="fade-up">
                         <h5 class="mb-4">Important Links</h5>
                         <ul class="list-unstyled">
                             <li class="mb-3"><a href="index.html" class="nav-footer">Home</a></li>
@@ -810,8 +793,8 @@
                             <li class="mb-3"><a href="contact.html" class="nav-footer">Contact Us</a></li>
                         </ul>
                     </div>
-
-                    <div class="col-md-3 mb-4">
+    
+                    <div class="col-md-3 mb-4" data-aos="fade-right">
                         <h5 class="mb-4">Contact Us</h5>
                         <p class="nav-footer mb-3">
                             Email: <a href="mailto:marrygoldfilms@gmail.com" class="text-white">marrygoldfilms@gmail.com</a>
@@ -820,15 +803,16 @@
                         <p class="nav-footer mb-3">Location: Sifty Arts Campus Boring Patliputra Road, Opposite Vijaya Bank, near A.N. College, Patna, Bihar 800001</p>
                     </div>
                 </div>
-
+    
                 <hr>
-
-                <div class="d-flex justify-content-center py-4">© Copyright 2024, All Rights Reserved by MarryGold Films - Wedding Photography</div>
+    
+                <div class="d-flex justify-content-center py-4" data-aos="fade-up">© Copyright 2024, All Rights Reserved by MarryGold Films - Wedding Photography</div>
             </div>
         </div>
-        <img src="assets/image/flower1.svg" alt="Decorative Image" class="footer-image">
-        <img src="assets/image/flower1.svg" alt="Decorative Image" class="footer-image2">
+        <img src="assets/image/flower1.svg" alt="Decorative Image" class="footer-image" data-aos="fade-up">
+        <img src="assets/image/flower1.svg" alt="Decorative Image" class="footer-image2" data-aos="fade-up">
     </footer>
+    
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script src="/assets/js/main.js"></script>
