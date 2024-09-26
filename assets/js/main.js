@@ -18,7 +18,6 @@ document.addEventListener("DOMContentLoaded", function () {
     function setActiveClasses() {
         resetActiveClasses();
 
-        // Обработка основного меню
         navLinks.forEach(function (link) {
             let linkPath = link.getAttribute('href').split('/').pop();
             if (linkPath === currentLocation) {
@@ -26,12 +25,10 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
 
-        // Обработка подменю
         dropdownLinks.forEach(function (link) {
             let linkPath = link.getAttribute('href').split('/').pop();
             if (linkPath === currentLocation) {
                 link.classList.add('active');
-                // Выделяем родительский пункт меню "Products"
                 let parentLink = link.closest('.nav-item-products').querySelector('.nav-link-products');
                 if (parentLink) {
                     parentLink.classList.add('active');
@@ -98,14 +95,12 @@ document.addEventListener("DOMContentLoaded", function () {
             const currentCard = this.parentElement;
             const isOpen = currentCard.classList.contains('open');
 
-            // Закрыть все другие вопросы
             document.querySelectorAll('.card-faq').forEach(card => {
                 if (card !== currentCard) {
                     card.classList.remove('open');
                 }
             });
 
-            // Переключить текущий вопрос
             if (isOpen) {
                 currentCard.classList.remove('open');
             } else {
@@ -122,8 +117,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     navItems.forEach(function (item) {
         item.addEventListener('click', function (event) {
-            event.preventDefault(); // Отключаем переход по ссылке
-            this.parentElement.classList.toggle('active'); // Переключаем класс active
+            event.preventDefault();
+            this.parentElement.classList.toggle('active'); 
         });
     });
 
@@ -141,27 +136,26 @@ images.forEach((img, index) => {
     img.addEventListener('click', () => {
         modal.style.display = 'block';
         modalImg.src = img.src;
-        modalImg.dataset.index = index; // сохраняем индекс изображения
-        document.body.classList.add('modal-open'); // Запретить прокрутку
+        modalImg.dataset.index = index; 
+        document.body.classList.add('modal-open');
     });
 });
 
 // Закрытие модального окна
 closeModal.addEventListener('click', () => {
     modal.style.display = 'none';
-    document.body.classList.remove('modal-open'); // Разрешить прокрутку
+    document.body.classList.remove('modal-open'); 
 });
 
 modal.addEventListener('click', (event) => {
     if (event.target === modal) {
         modal.style.display = 'none';
-        document.body.classList.remove('modal-open'); // Разрешить прокрутку
+        document.body.classList.remove('modal-open'); 
     }
 });
 
-// Обработчики для кнопок "Назад" и "Вперед"
 prevBtn.addEventListener('click', (event) => {
-    event.stopPropagation(); // Остановить всплытие события
+    event.stopPropagation();
     let currentIndex = parseInt(modalImg.dataset.index);
     if (currentIndex > 0) {
         currentIndex--;
@@ -171,7 +165,7 @@ prevBtn.addEventListener('click', (event) => {
 });
 
 nextBtn.addEventListener('click', (event) => {
-    event.stopPropagation(); // Остановить всплытие события
+    event.stopPropagation();
     let currentIndex = parseInt(modalImg.dataset.index);
     if (currentIndex < images.length - 1) {
         currentIndex++;
